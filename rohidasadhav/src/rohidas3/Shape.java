@@ -1,46 +1,39 @@
 package rohidas3;
-
-class Square
+class Circle extends Shape  //Circle is child class 
 {
-    double side;
-
-    Square(double side)
-    {
-        this.side = side;
-    }
-
-    double getArea()
-    {
-        return side * side;
-    }
+	public void getArea() // method
+	{
+		int r=7;
+		double  pi = 3.14;
+		double area =pi*r*r;    // calculate area of circle
+		System.out.println(area);
+		
+	}
 }
-
-class Circle
+class Triangle extends Shape//Triangle is child class 
 {
-    double radius;
-
-    Circle(double radius)
-    {
-        this.radius = radius;
-    }
-
-    double getArea()
-    {
-        return (22.0/7.0) * radius * radius;
-    }
+	public void getArea() // method
+	{
+		int b=6;
+		int h=8;
+		double area=(b*h)/2;   // calculate area of triangle
+		System.out.println(area);
+	}
 }
-    class Shape
-    {
-        public static void main(String arg[])
-        {
-          
-            Square s = new Square(7);
-            Circle c = new Circle(3.5);
-            
-            System.out.println("Square Area : " + s.getArea());
-            System.out.println("Circle Area : " + c.getArea());
-            System.out.println();
-            
+
+public class Shape  // parent class
+{
+
+	public static void main(String[] args)
+	{
+		Circle c = new Circle();  // create object
+		System.out.println("Area of Circle :");
+		c.getArea(); // method call
+		System.out.println("Area of Triangle");
+		Triangle t = new Triangle();  // create object
+		t.getArea();   // method call
+
+	}
+
 }
-    }
 
