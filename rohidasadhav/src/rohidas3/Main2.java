@@ -27,7 +27,7 @@ public class Main2
 			return n+m;
 		};
 		
-		System.out.println(a.Adder(35, 65));
+		System.out.println(a.Adder(34, 66));
 		
 		
 	}
