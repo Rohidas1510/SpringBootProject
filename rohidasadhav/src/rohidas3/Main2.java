@@ -1,39 +1,35 @@
 package rohidas3;
 import java.util.ArrayList;
 import java.util.List;
-interface Adder{
-	public int add(int a,int b);
-}
-public class Main2 {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-Adder d=(x,y)->
+// functional interface
+interface Addition  // 
 {
-	return x+y;
-};
-System.out.println(d.add(10, 20));
-System.out.println();
-List<String> upper = getUpper();
-
-upper.stream()
-        .map((p) -> p.toUpperCase())
-        .sorted()
-        .forEach((p) -> System.out.println(p));
+	public int Adder(int x, int y);
 }
 
-	// create an object of list using ArrayList
-    static List<String> places = new ArrayList<>();
+public class Main2
+{
 
-
-    public static List getUpper(){
-
-   
-     
-        places.add("pune");
-      
-        return places;
-    }
-
+	public static void main(String[] args) 
+	{
+			List<String> name=new ArrayList<String>(); // array list
+		name.add("rohidas");
+		
+		name.forEach((m)->  // lambda expression
+		{
+			System.out.println(m.toUpperCase());  // use UpperCase method
+			
+		});
+		
+		Addition a=(n,m)->  // lambda expression
+		{
+			return n+m;
+		};
+		
+		System.out.println(a.Adder(7, 5));
+		
+		
+	}
 
 }
