@@ -10,13 +10,12 @@ class Circle extends Shape  //Circle is child class
 		
 	}
 }
-class Triangle extends Shape//Triangle is child class 
+class Square extends Shape//Square is child class 
 {
 	public void getArea() // method
 	{
-		int b=56;
-		int h=34;
-		double area=(b*h)/2;   // calculate area of triangle
+		int a=2;
+		double area=a*a;   // calculate area of Square 
 		System.out.println(area);
 	}
 }
@@ -29,9 +28,9 @@ public class Shape  // parent class
 		Circle c = new Circle();  // create object
 		System.out.println("Area of Circle :");
 		c.getArea(); // method call
-		System.out.println("Area of Triangle");
-		Triangle t = new Triangle();  // create object
-		t.getArea();   // method call
+		System.out.println("Area of Square :");
+		Square s = new Square ();  // create object
+		s.getArea();   // method call
 
 	}
 
