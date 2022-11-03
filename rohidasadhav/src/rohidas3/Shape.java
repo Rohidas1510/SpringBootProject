@@ -14,8 +14,8 @@ class Triangle extends Shape//Triangle is child class
 {
 	public void getArea() // method
 	{
-		int b=6;
-		int h=8;
+		int b=56;
+		int h=34;
 		double area=(b*h)/2;   // calculate area of triangle
 		System.out.println(area);
 	}
