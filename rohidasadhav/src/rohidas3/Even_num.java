@@ -16,10 +16,17 @@ public class Even_num {
 		number.forEach((m)->{
 			
 			if(m%2==0)
-			{
-				System.out.println(m);
+			{	
+				System.out.println("This is even numbers = "+m);
 		}
-		
+
+	});
+	number.forEach((e)->{
+			
+			if(e%2==1)
+			{	
+				System.out.println("This is odd numbers = "+e);
+		}
 
 	});
 
