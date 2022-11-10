@@ -25,7 +25,7 @@ public class CustomizeException {
 				System.out.println("hello world");
 				try 
 				{
-					checError(4);
+					checError(2);
 				}
 				catch(Exception e)
 				{
