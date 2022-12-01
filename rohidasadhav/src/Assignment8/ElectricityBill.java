@@ -1,37 +1,37 @@
 package Assignment8;
 import java.util.*;
+ 
+	public class ElectricityBill 
+	{
 
-class ElectricityBill {
- 
-    // calculate the
-    // electricity bill
-    public static int calculateBill(int units)
-    {
- 
-        // Condition to find the charges
-        if (units <= 100) {
-            return (int) (units * 1.20);
-        }
-        else if (units <= 200) {
-            return (int) ((100 * 2)
-                + (units - 100)
-                      * 2);
-        }
-        else if (units <= 300) {
-            return (100 * 3)
-                + (units - 200)
-                      * 3;
-        }
-       
-        return 0;
-    }
- 
-    // Main Method
-    public static void main(String args[])
-    {
-        int units =300;
- System.out.println(" Electricity Bill = ");
-        System.out.println(calculateBill(units));
-    }
-}
+		public static void main(String[] args) 
+		{
+			Scanner sc = new Scanner(System.in); // Scanner class 
+			System.out.println("Enter the units :");
+			int unit = 0;
+			double TotalCharges;
+			unit=sc.nextInt(); // take input from user
+			
+			if(unit>0 && unit <=100)  //using if else statement 
+			{
+				TotalCharges=unit*1.20;
+				System.out.println("Your Electricity Bill : "+TotalCharges +"/-");
+			}
+			else if(unit>100 && unit <=300) 
+			{
+				TotalCharges=unit*2.0;
+				System.out.println("Your Electricity Bill : "+TotalCharges +"/-");
+			}
+			else if(unit>300) 
+			{
+				TotalCharges=unit*3.0;
+				System.out.println("Your Electricity Bill : "+TotalCharges +"/-");
+			}
+			else 
+			{
+				System.out.println("Invalid input");
+			}
+		}
+
+	}
 
