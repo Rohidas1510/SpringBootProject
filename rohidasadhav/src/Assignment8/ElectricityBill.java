@@ -3,14 +3,12 @@ import java.util.*;
 
 class ElectricityBill {
  
-    // Function to calculate the
+    // calculate the
     // electricity bill
     public static int calculateBill(int units)
     {
  
         // Condition to find the charges
-        // bar in which the units consumed
-        // is fall
         if (units <= 100) {
             return (int) (units * 1.20);
         }
@@ -28,7 +26,7 @@ class ElectricityBill {
         return 0;
     }
  
-    // Main Code
+    // Main Method
     public static void main(String args[])
     {
         int units =300;
