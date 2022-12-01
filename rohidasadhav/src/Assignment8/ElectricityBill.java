@@ -15,17 +15,17 @@ import java.util.*;
 			if(unit>0 && unit <=100)  //using if else statement 
 			{
 				TotalCharges=unit*1.20;
-				System.out.println("Your Electricity Bill : "+TotalCharges +"/-");
+				System.out.println("Your Electricity Bill : "+TotalCharges +" /-");
 			}
 			else if(unit>100 && unit <=300) 
 			{
 				TotalCharges=unit*2.0;
-				System.out.println("Your Electricity Bill : "+TotalCharges +"/-");
+				System.out.println("Your Electricity Bill : "+TotalCharges +" /-");
 			}
 			else if(unit>300) 
 			{
 				TotalCharges=unit*3.0;
-				System.out.println("Your Electricity Bill : "+TotalCharges +"/-");
+				System.out.println("Your Electricity Bill : "+TotalCharges +" /-");
 			}
 			else 
 			{
