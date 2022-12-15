@@ -14,11 +14,4 @@
 	<natures>
 		<nature>org.eclipse.jdt.core.javanature</nature>
 	</natures>
-	<linkedResources>
-		<link>
-			<name>src/Assignment9/parents.txt</name>
-			<type>1</type>
-			<location>C:/Users/ME/Desktop/parents.txt</location>
-		</link>
-	</linkedResources>
 </projectDescription>
