@@ -95,3 +95,70 @@ public class App
     }
    
 }
+
+/*OUTPUT*/
+
+/* Enter password: **********
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 47
+Server version: 8.0.31 MySQL Community Server - GPL
+
+Copyright (c) 2000, 2022, Oracle and/or its affiliates.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> use comp;
+Database changed
+mysql> show tables;
++--------------------------------+
+| Tables_in_comp                 |
++--------------------------------+
+| course_details                 |
+| emp                            |
+| emp_lern                       |
+| project                        |
+| student                        |
+| teacher_details                |
+| teacher_details_course_details |
++--------------------------------+
+7 rows in set (0.28 sec)
+
+mysql> select * from Course_details;
++------+-------------+--------------+
+| C_Id | Course_name | teacher_T_ID |
++------+-------------+--------------+
+|  101 | Java        |            1 |
+|  102 | Python      |            1 |
+|  103 | Angular     |            1 |
+|  104 | Core Java   |            2 |
+|  105 | C++         |            2 |
++------+-------------+--------------+
+5 rows in set (0.05 sec)
+
+mysql> select * from teacher_details;
++------+----------+
+| T_ID | Name     |
++------+----------+
+|    1 | Mrunali  |
+|    2 | Deshmukh |
++------+----------+
+2 rows in set (0.00 sec)
+
+mysql> select * from teacher_details_course_details;
++--------------+-------------+
+| Teacher_T_ID | course_C_Id |
++--------------+-------------+
+|            1 |         101 |
+|            1 |         102 |
+|            1 |         103 |
+|            2 |         104 |
+|            2 |         105 |
++--------------+-------------+
+5 rows in set (0.02 sec)
+
+mysql>
+*/
