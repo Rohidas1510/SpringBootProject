@@ -1,9 +1,10 @@
-package org.Springfremework;
+package com.Example;
+
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-import Entity.Agent;
-import Entity.Agentdao;
+import com.Example.Entity.Agent;
+import com.Example.Entity.Agentdao;
 
 /**
  * Hello world!
@@ -35,7 +36,7 @@ public class App
     }
 }
 
-                           /*OUTPUT*/
+/*OUTPUT*/
 
 /* Enter password: **********
 Welcome to the MySQL monitor.  Commands end with ; or \g.
@@ -81,8 +82,8 @@ Query OK, 0 rows affected (4.11 sec)
 +----+-----------+------------+
 |  1 | Shubham   |      50000 |
 |  2 | Prasad    |      40000 |
-|  3 | Dinesh    |      32000 |
+|  3 | Dinesh    |      30000 |
 +----+-----------+------------+
 mysql>
 
- */
+*/
