@@ -1,0 +1,11 @@
+<h1>DELETE Patient</h1>
+<h1>Enter the Patient details</h1>
+<form (ngSubmit)= "deletePatient(id.value)">
+    <div class="form-control p-2">
+        <label for="id">Patient Id</label>
+        <input type="text" name="id" id="id" #id>
+    </div>
+    <div class="text-center p-2">
+        <input type="submit" value="Submit">
+    </div>
+</form>
